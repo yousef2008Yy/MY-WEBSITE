@@ -1,18 +1,71 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>موقعي الأول</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yousef Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>أهلاً بيك 👋</h1>
-  <p>ده أول موقع أعمله بنفسي</p>
-  
-  <!-- زر واحد بس -->
-  <button onclick="changeBackground()">غيّر لون الخلفية</button>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">YOUSEF</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </nav>
 
-  <!-- ربط ملف الجافاسكربت -->
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to my website</h1>
+    <p>This is my first website using HTML, CSS, and JavaScript</p>
+    <button onclick="changeBackground()">Change Background Color</button>
+    <div class="image-card">
+      <img src="your-image.jpg" alt="Website Image">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Yousef 👋. I'm 17 years old and learning web development. I created this site using HTML, CSS, and JavaScript. In the future, I want to improve my skills and maybe work as a freelancer.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>A simple HTML & CSS website.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>A JavaScript project with interactive features.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Scripts -->
   <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
